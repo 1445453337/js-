@@ -1,0 +1,14 @@
+####在目标节点插入新的节点
+
+insertAfter(newElement,tagertElement){
+  var parent = tagertElement.parentNode;
+  if(parent.lastChild == tagertElement){
+    tagertElement.appendChild(newElement);  
+  }
+  else{
+    parent.insertBefore(newElement,tagerElment.nextSibling);
+  
+  }
+
+
+}
